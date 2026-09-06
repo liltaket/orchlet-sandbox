@@ -1,5 +1,6 @@
-﻿{
+{
   "activeHarness": "opencode",
+  "routingMode": "AUTO",
   "git": {
     "push": true,
     "openPr": true,
@@ -7,9 +8,15 @@
     "baseBranch": "main"
   },
   "verification": ["npm test"],
+  "budget": {
+    "perTaskUsd": 0.5,
+    "dailyUsd": 5.0,
+    "monthlyUsd": 50.0,
+    "hardStopAtPercent": 100
+  },
   "roleMappings": {
-    "executor": { "provider": "openrouter", "model": "google/gemini-2.5-flash" },
-    "critic": { "provider": "openrouter", "model": "google/gemini-2.5-flash" },
-    "repairer": { "provider": "openrouter", "model": "google/gemini-2.5-flash" }
+    "executor": { "provider": "openrouter", "model": "z-ai/glm-5.3-flash" },
+    "critic": { "provider": "openrouter", "model": "google/gemini-3.8-flash" },
+    "repairer": { "provider": "openrouter", "model": "z-ai/glm-5.3-flash" }
   }
 }
