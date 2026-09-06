@@ -1,0 +1,15 @@
+﻿{
+  "activeHarness": "opencode",
+  "git": {
+    "push": true,
+    "openPr": true,
+    "autoMerge": false,
+    "baseBranch": "main"
+  },
+  "verification": ["npm test"],
+  "roleMappings": {
+    "executor": { "provider": "openrouter", "model": "google/gemini-2.5-flash" },
+    "critic": { "provider": "openrouter", "model": "google/gemini-2.5-flash" },
+    "repairer": { "provider": "openrouter", "model": "google/gemini-2.5-flash" }
+  }
+}
