@@ -1,11 +1,25 @@
-﻿{
-  " activeHarness\: \opencode\,
- \git\: {
- \push\: true,
- \openPr\: true,
- \autoMerge\: false
- },
- \verification\: [
- \npm test\
- ]
+{
+  "activeHarness": "opencode",
+  "roleMappings": {
+    "executor": {
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "repairer": {
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-flash"
+    },
+    "critic": {
+      "provider": "openrouter",
+      "model": "google/gemini-2.5-pro"
+    }
+  },
+  "git": {
+    "push": true,
+    "openPr": true,
+    "autoMerge": false
+  },
+  "verification": [
+    "npm test"
+  ]
 }
