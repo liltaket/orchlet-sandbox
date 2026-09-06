@@ -5,7 +5,9 @@
     "push": true,
     "openPr": true,
     "autoMerge": false,
-    "baseBranch": "main"
+    "baseBranch": "main",
+    "maxPollAttempts": 40,
+    "pollDelayOverrideMs": 6000
   },
   "verification": ["npm test"],
   "budget": {
