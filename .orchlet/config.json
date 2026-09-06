@@ -1,0 +1,11 @@
+﻿{
+  " activeHarness\: \opencode\,
+ \git\: {
+ \push\: true,
+ \openPr\: true,
+ \autoMerge\: false
+ },
+ \verification\: [
+ \npm test\
+ ]
+}
